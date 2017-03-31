@@ -264,14 +264,13 @@ public class StAXParserDemo {
 	        throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
 	    Connection         c;
 	    
-	    String DbName = "quarrio005A0000005BIXjIAO_cache";
+	    String DbName = "Databasename";
 
-		//Class.forName("com.mysql.jdbc.Driver").newInstance();
-	    //c = DriverManager.getConnection("jdbc:mysql://52.66.99.31/" + DbName , "usman", "22crimes");
+		
 	    
 	    // Register Postgresql driver
 		Class.forName("org.postgresql.Driver");
-		c = DriverManager.getConnection("jdbc:postgresql://staging-rds.conversationanalytics.io/" + DbName , "mypostgres", "L0LinSL2017");
+		c = DriverManager.getConnection("jdbc:postgresql://host/" + DbName , "user", "password");
 
 		System.out.println("connection established.");
 	    return c;
