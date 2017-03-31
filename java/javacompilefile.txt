@@ -1,0 +1,24 @@
+javac -cp '.:postgresql-9.4.1212.jre6.jar' readXML.java
+
+java -Xmx4g -cp '.:postgresql-9.4.1212.jre6.jar' readXML
+
+
+//run classes from cmd
+
+remove the package line and run javac *.java
+
+
+//to run multiple classes with multiple jarfiles
+
+javac -cp lib/\* src/*.java
+
+java -cp lib/\* src/
+
+//run jar file
+Export the java project in to a Runnable jar - using Eclipse IDE
+Select the main or running class file - Launch configuration
+In Library handling - select the option [ Extract required libraries in to jar file ]
+Open command prompt go to the directory where runnable jar is available
+type > java -jar Runnable.jar
+
+java -jar Runnable.jar

@@ -1,0 +1,25 @@
+<dependency>
+    <groupId>com.customs.force.uber</groupId>
+    <artifactId>forcewscuber</artifactId>
+    <version>33.0.0</version>
+</dependency>
+
+
+mvn install:install-file -Dfile=/home/tomcat/CustomJars/stanford-corenlp-3.5.2.jar -DgroupId=com.customs.force.uber -DartifactId=forcewscuber -Dversion=33.0.0 -Dpackaging=jar
+
+
+<dependency>
+    <groupId>com.customs.walter.partner</groupId>
+    <artifactId>walter16partner</artifactId>
+    <version>0.0.1</version>
+</dependency>
+
+mvn install:install-file -Dfile=/home/tomcat/CustomJars/stanford-corenlp-3.5.2.jar -DgroupId=com.customs.walter.partner -DartifactId=walter16partner -Dversion=0.0.1 -Dpackaging=jar
+
+<dependency>
+    <groupId>com.customs.walter.enterprise</groupId>
+    <artifactId>walter16enterprise</artifactId>
+    <version>0.0.1</version>
+</dependency>
+
+mvn install:install-file -Dfile=/home/tomcat/CustomJars/stanford-corenlp-3.5.2.jar -DgroupId=com.customs.walter.enterprise -DartifactId=walter16enterprise -Dversion=0.0.1 -Dpackaging=jar
