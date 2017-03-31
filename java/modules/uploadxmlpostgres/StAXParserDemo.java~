@@ -21,10 +21,7 @@ import javax.xml.stream.events.XMLEvent;
 
 public class StAXParserDemo {
    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
-      boolean bFirstName = false;
-      boolean bLastName = false;
-      boolean bNickName = false;
-      boolean bMarks = false;
+  
       ArrayList<String> allcols = new ArrayList<String>();
   	
   	allcols = getcolnames();

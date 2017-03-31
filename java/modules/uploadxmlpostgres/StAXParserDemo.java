@@ -49,7 +49,7 @@ public class StAXParserDemo {
          ArrayList<String> insertValues = new ArrayList<String>();
          Connection ds             = null;
 	        String dbName = "";
-	        //dbName = "quarrio"+userid+"_cache";
+	        
 	         ds = createConnection();
          
          int count = 0;
@@ -231,7 +231,7 @@ public class StAXParserDemo {
 		Connection ds             = null;
 	    java.sql.Statement  stmt  = null;
 	    String dbName = "";
-	    //dbName = "quarrio"+userid+"_cache";
+	    
 	     ds = createConnection();
 	     stmt = ds.createStatement();
 	     
