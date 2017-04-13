@@ -1,0 +1,3 @@
+create copy of database
+
+CREATE DATABASE newdbname WITH TEMPLATE originaldbname OWNER dbuser;

@@ -21,7 +21,10 @@ import javax.xml.stream.events.XMLEvent;
 
 public class StAXParserDemo {
    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
-  
+      boolean bFirstName = false;
+      boolean bLastName = false;
+      boolean bNickName = false;
+      boolean bMarks = false;
       ArrayList<String> allcols = new ArrayList<String>();
   	
   	allcols = getcolnames();
@@ -36,7 +39,7 @@ public class StAXParserDemo {
          XMLInputFactory factory = XMLInputFactory.newInstance();
          XMLEventReader eventReader =
          factory.createXMLEventReader(
-            new FileReader("path/to/xml/file"));
+            new FileReader("D:/serviceRocket/serviceRocket_lead.xml"));
          String columnName = "";
          String columnValue="";
          String attrval="";
@@ -64,7 +67,7 @@ public class StAXParserDemo {
                     	 insertColnames.clear();
                     	 insertValues.clear();
                        // System.out.println("-----------------------Start Element : records----------------------");
-                      insertStatement_A="insert into \"Tablename\"(";
+                      insertStatement_A="insert into \"Leadtest\"(";
            			  insertStatement_B=") values(";
            			  insertStatement_C=" )";
            			  insertStatement_full="";
@@ -235,7 +238,7 @@ public class StAXParserDemo {
 	     ds = createConnection();
 	     stmt = ds.createStatement();
 	     
-	     String colQuery="SELECT column_name FROM information_schema.columns WHERE table_schema = 'public'  AND table_name   = 'tablename'";
+	     String colQuery="SELECT column_name FROM information_schema.columns WHERE table_schema = 'public'  AND table_name   = 'Leadtest'";
 	     
 	     ResultSet rs = stmt.executeQuery(colQuery);
 	     while(rs.next()){
@@ -261,13 +264,14 @@ public class StAXParserDemo {
 	        throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
 	    Connection         c;
 	    
-	    String DbName = "Databasename";
+	    String DbName = "quarrio005A0000005BIXjIAO_cache";
 
-		
+		//Class.forName("com.mysql.jdbc.Driver").newInstance();
+	    //c = DriverManager.getConnection("jdbc:mysql://52.66.99.31/" + DbName , "usman", "22crimes");
 	    
 	    // Register Postgresql driver
 		Class.forName("org.postgresql.Driver");
-		c = DriverManager.getConnection("jdbc:postgresql://host/" + DbName , "user", "password");
+		c = DriverManager.getConnection("jdbc:postgresql://staging-rds.conversationanalytics.io/" + DbName , "mypostgres", "L0LinSL2017");
 
 		System.out.println("connection established.");
 	    return c;
