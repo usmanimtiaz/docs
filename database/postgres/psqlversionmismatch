@@ -1,0 +1,10 @@
+--ubuntu
+--find version of all postgres-client installed
+
+find / -name pg_dump -type f 2>/dev/null
+
+--then remove all the versions that are not required
+sudo apt-get remove postgresql-client-9.old_version
+
+--if rquired, install the version that you want the version
+sudo apt-get install postgresql-client-9.required_version
