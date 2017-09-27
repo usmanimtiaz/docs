@@ -1,0 +1,3 @@
+to set environment variables in tomcat
+
+add them to /etc/default/tomcat
