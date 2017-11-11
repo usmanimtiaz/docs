@@ -1,0 +1,18 @@
+download the os
+unzip it
+find the memory card: sudo fdisk -l
+
+copy to memory card via following command: sudo dd bs=1M if=2016-09-23-raspbian-jessie.img of=path of sdcard
+
+once the os is copied: go to the boot dir and create a file named ssh with no extension: touch ssh
+
+put the memory card back in the pi
+
+connect pi to laptop via ethernet cable
+ on your ubuntu pc:
+  	Go the edit connection setting.
+	Navigate to ipv4 option. Select method : shared to other computer.
+	Then open command prompt and type command >"cat /var/lib/misc/dnsmasq.leases". You will get raspberry pi Ip from that.
+	then open command prompt and type: ssh pi@"ip of raspberry pi"
+
+default password is raspberry

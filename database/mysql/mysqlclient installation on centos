@@ -1,0 +1,3 @@
+#if mysql_config not found!
+sudo yum install mariadb-devel
+pip3 install mysqlclient
