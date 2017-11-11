@@ -1,0 +1,8 @@
+ifconfig 
+
+find inet addr:192.168._._
+
+find all the devices connected to your network
+sudo nmap -sP 192.168._.0/24
+
+
