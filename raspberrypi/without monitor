@@ -19,3 +19,6 @@ default password is raspberry
 
 wifi setup from cmd
 https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+
+webserver on raspberry
+https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi/
