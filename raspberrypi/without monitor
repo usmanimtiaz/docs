@@ -16,3 +16,6 @@ connect pi to laptop via ethernet cable
 	then open command prompt and type: ssh pi@"ip of raspberry pi"
 
 default password is raspberry
+
+wifi setup from cmd
+https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
