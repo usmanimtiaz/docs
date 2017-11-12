@@ -19,6 +19,13 @@ default password is raspberry
 
 wifi setup from cmd
 https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+wpa_passphrase "ssid" "wifiPassword"
+sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+at the bottom of the file add
+network={
+    ssid="testing"
+    psk="testingPassword"
+}
 
 webserver on raspberry
 https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi/

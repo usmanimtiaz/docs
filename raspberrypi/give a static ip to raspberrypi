@@ -1,0 +1,26 @@
+login to raspberry pi
+find defaule gateway, write:
+	 route -ne
+in my case default gateway: dg.dg.dg.dg
+
+now i need to find out my DNS ip addresses
+type: cat /etc/resolv.conf
+domain Home
+nameserver dns.dns.dns.dns
+
+open /etc/dhcpcd.conf
+
+
+sudo vim /etc/dhcpcd.conf
+#add this at the end of dhcpcd file
+
+interface eth0
+static ip_address=dg.dg.dg.100 #1-255
+static routers=dg.dg.dg.dg
+static domain_name_servers=dns.dns.dns.dns
+
+interface wlan0
+static ip_address=dg.dg.dg.99 #1-255
+static routers=dg.dg.dg.dg
+static domain_name_servers=dns.dns.dns.dns
+
