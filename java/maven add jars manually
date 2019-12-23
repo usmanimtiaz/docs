@@ -24,3 +24,13 @@ mvn install:install-file -Dfile= -DgroupId=com.customs.walter.enterprise -Dartif
     <artifactId>walter16enterprise</artifactId>
     <version>0.0.1</version>
 </dependency>
+
+
+mvn install:install-file -Dfile=/home/usman/Documents/E/Quarrio/salesforcewsdl/watlerpartner42.jar -DgroupId=com.customs.walter.partner -DartifactId=walterpartner42 -Dversion=0.0.1 -Dpackaging=jar
+
+
+<dependency>
+		    <groupId>com.customs.walter.partner</groupId>
+		    <artifactId>walterpartner42</artifactId>
+		    <version>0.0.1</version>
+</dependency>

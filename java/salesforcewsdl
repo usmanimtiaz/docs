@@ -1,0 +1,6 @@
+
+java –classpath force-wsc-42.0.0.jar:ST4-4.0.7.jar:antlr-runtime-3.5.jar com.sforce.ws.tools.wsdlc /home/Documents/E/salesforcewsdl/wsdl42.xml  /home/Documents/E//salesforcewsdl/Partner42.jar
+
+java -DcompileTarget=1.8–classpath -cp force-wsc-42.0.0.jar:ST4-4.0.7.jar:antlr-runtime-3.5.jar com.sforce.ws.tools.wsdlc /home/E/salesforcewsdl/watlerwsdl42.xml  /home/Documents/salesforcewsdl/walterPartner42.jar
+
+in case this isn't working for you follow: https://github.com/forcedotcom/wsc
