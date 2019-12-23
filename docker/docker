@@ -1,0 +1,9 @@
+DOCKER
+TO BUILD:
+docker build -t CONTAINERNAME DIR
+TO RUN:
+docker run -p 80:80 CONTAINERNAME
+
+docker container ls
+
+docker stop containerid
