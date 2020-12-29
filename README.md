@@ -1,8 +1,3 @@
-behave -f allure_behave.formatter:AllureFormatter -o <report-dir> features/account_page.feature
-
-
-need to authorize the connected app once using following url
-https://login.salesforce.com/services/oauth2/authorize?client_id=[client_id]&redirect_uri=[redirect_url]&response_type=code
 
 # Automated Testing
 intro
