@@ -25,6 +25,6 @@ behave -f allure_behave.formatter:AllureFormatter -o <path to reports> features/
 
 - salesforce_app : connected app config
 - salesforce_auth : salesforce auth config
-- selenium_config
+- selenium_config : selenium chrome driver path
 - salesforce_client : config for making and deleting test data
 
