@@ -23,8 +23,8 @@ behave -f allure_behave.formatter:AllureFormatter -o <path to reports> features/
 ## Running Tests locally
 ### create a virtual environment and install requirements using pip
 
-```python3 -m venv <path-to-new-virtual-environment>```
-```pip3 install -r requirements.txt```
+* create venv : ```python3 -m venv <path-to-new-virtual-environment>```
+* Install Requirements : ```pip3 install -r requirements.txt```
 
 ### Once the Environment is ready go to config/config_service and setup the configuration for automated testing
 
