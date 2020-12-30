@@ -22,6 +22,7 @@ Setup the environment for automated testing by using the requirements-testing.tx
 * activate venv : ```source <path-to-new-virtual-environment>/bin/activate```
 * Install Requirements : ```pip3 install -r requirements-testing.txt```
 
+#### create a simple connected app in your scratch org
 
 ### Once the Environment is ready go to automated-testing/config/config_service and setup the configuration for your scratch org
 - salesforce_app : connected app config
@@ -32,9 +33,9 @@ Setup the environment for automated testing by using the requirements-testing.tx
 
 #### use openssl to create ssl certificate
 *  ```openssl genrsa -des3 -passout pass:<randompassword> -out server.pass.key 0000```
-*  ```openssl rsa -passin pass:usman -in server.pass.ket -out server.key```
+*  ```openssl rsa -passin pass:<randompassword> -in server.pass.ket -out server.key```
 *  ```openssl req -new -key server.key -out server.csr```
 *  ```openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt```
-
+server.key will be used to sign the jwt ```salesforce_app['private_key']```
 ### Run first test
 ```behave <Automated-testing-dir>/features/account_page.feature```
