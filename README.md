@@ -2,11 +2,6 @@
 # Automated Tests
 Automated Tests directory includes framework for salesforce test automation. It will allow developers to write Scenarios which this framework will run as tests.
 
-## Steps
-steps definition comes here
-
-## Configs
-- Automated-testing.config.config_service
 
 ## Allure Reports
 ### Not integrated with drone yet
@@ -24,6 +19,7 @@ Setup the environment for automated testing by using the requirements-testing.tx
 
 #### create a simple connected app in your scratch org
 
+## Configs
 ### Once the Environment is ready go to automated-testing/config/config_service and setup the configuration for your scratch org
 - salesforce_app : connected app config
 - salesforce_auth : salesforce auth config
@@ -37,6 +33,5 @@ Setup the environment for automated testing by using the requirements-testing.tx
 *  ```openssl req -new -key server.key -out server.csr```
 *  ```openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt```
 * server.key will be used to sign the jwt ```salesforce_app['private_key']```
-
 ### Run first test
 ```behave <Automated-testing-dir>/features/account_page.feature```
