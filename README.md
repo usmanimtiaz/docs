@@ -6,14 +6,13 @@ Automated Tests directory includes framework for salesforce test automation. It 
 steps definition comes here
 
 ## Configs
-- AutomatedTesting.config.config_service
+- Automated-testing.config.config_service
 
 ## Allure Reports
 ### Not integrated with drone yet
-behave -f allure_behave.formatter:AllureFormatter -o <path to reports> features/account_page.feature
+allure_behave: ```behave -f allure_behave.formatter:AllureFormatter -o <path to reports> features/account_page.feature```
 
 ## Running Tests locally
-
 
 ### Installing Dependencies
 Setup the environment for automated testing by using the requirements-testing.txt
