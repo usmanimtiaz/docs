@@ -18,6 +18,7 @@ Setup the environment for automated testing by using the requirements-testing.tx
 * Install Requirements : ```pip3 install -r requirements-testing.txt```
 
 #### create a simple connected app in your scratch org
+* you'll need refresh_token, offline access more can be found in salesforce docs ```https://help.salesforce.com/articleView?id=remoteaccess_oauth_tokens_scopes.htm&type=5#oauth_scopes```
 
 ## Configs
 ### Once the Environment is ready go to automated-testing/config/config_service and setup the configuration for your scratch org
