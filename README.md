@@ -38,7 +38,6 @@ Setup the environment for automated testing by using the requirements-testing.tx
 #### Manually allow connected app access
 * goto ```https://test.salesforce.com/services/oauth2/authorize?client_id=<CONNECTED_APP_CLIENT_ID>&redirect_uri=<CALLBACK_URL>&response_type=code```
 
-* SINCE ITS A ONE TIME THING, DO WE NEED TO AUTOMATE THIS ?, TALK TO KRISTEN ABOUT IT.
 
 ### Run first test
 * ```behave <Automated-testing-dir>/features/account_page.feature```
