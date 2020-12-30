@@ -36,6 +36,7 @@ Setup the environment for automated testing by using the requirements-testing.tx
 *  ```openssl rsa -passin pass:<randompassword> -in server.pass.ket -out server.key```
 *  ```openssl req -new -key server.key -out server.csr```
 *  ```openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt```
-server.key will be used to sign the jwt ```salesforce_app['private_key']```
+* server.key will be used to sign the jwt ```salesforce_app['private_key']```
+
 ### Run first test
 ```behave <Automated-testing-dir>/features/account_page.feature```
