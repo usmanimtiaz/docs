@@ -56,6 +56,7 @@ Anyone can write scenarios in features file which are linked to steps with `step
 
 To implement this `scenario` we need to open our browser and then goto salesforce login page, enter our credentials and click on login which will take us to salesforce home page. Our scenario alog with steps will be;
 
+`salesforce_home.feature`
 ```
 Scenario: user navigates to salesforce home page
     Given open browser
@@ -65,4 +66,23 @@ Scenario: user navigates to salesforce home page
     Then we are at home
 ```
 
-now we can write steps
+Each step from the above scenario will be linked to our python functions in steps directory using decorators `(we don't need to specify which directory, behave will consider everything in steps)`.
+
+Our `salesforce_home_steps.py` will be;
+
+```
+@given('open browser')
+def open_chrome(context):
+    selenium steps to open chrome drivers
+    ....
+    
+....
+more steps from the above scenario
+....
+
+@then('we are at home')
+def home_page(context):
+    step to verify that we are actually at home
+```
+
+
